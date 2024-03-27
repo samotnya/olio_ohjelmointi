@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Harjoitus6_Eläimet
 {
-    internal class kissa
+     class kissa : eläin
     {
+        private static int instanssit = 0;
+        public kissa()
+        {
+            instanssit++;
+        }
+        public static new void KuinkaMonta()
+        {
+            Console.WriteLine("Kissoja luotu " + instanssit);
+        }
+        public override void Ääntele()
+        {
+            Console.WriteLine("Meow");
+        }
     }
 }
