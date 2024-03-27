@@ -13,9 +13,9 @@ internal class Program
         Kappaleet.Add(kappale3);
 
         Albumi albumi = new Albumi("Albumi 1", "Artisti 1", "Pop", 12.99, Kappaleet);
-
-    
         // Tulostetaan koko albumi
+
+
         albumi.TulostaAlbumi();
     }
 }
