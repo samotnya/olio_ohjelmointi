@@ -1,0 +1,28 @@
+﻿<Window x:Class="IkkunaLaskuriSovellus.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IkkunaLaskuri" Height="350" Width="500">
+    <Grid RenderTransformOrigin="0.509,0.588">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Syötä ikkunan leveys (cm):" Margin="5"/>
+        <TextBox Name="leveysTextBox" Grid.Row="1" Margin="5"/>
+
+        <TextBlock Text="Syötä ikkunan korkeus (cm):" Grid.Row="2" Margin="5"/>
+        <TextBox Name="korkeusTextBox" Grid.Row="3" Margin="5"/>
+
+        <TextBlock Text="Syötä karmipuun leveys (cm):" Grid.Row="4" Margin="5"/>
+        <TextBox Name="karmiTextBox" Grid.Row="5" Margin="5"/>
+
+        <Button Content="Laske" Click="Laske_Click" Grid.Row="6" Margin="5"/>
+
+        <TextBlock Name="tulosTextBlock" Grid.Row="7" Margin="10"/>
+    </Grid>
+</Window>

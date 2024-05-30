@@ -1,0 +1,16 @@
+﻿<Window x:Class="YksinkertainenKotiOhjausApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kodin Ohjaus" Height="412" Width="833">
+    <StackPanel Margin="10">
+        <Button Name="KeittionValotButton" Click="KeittionValotButton_Click" Margin="5"/>
+        <Button Name="OlohuoneenValotButton" Click="OlohuoneenValotButton_Click" Margin="5"/>
+        <Button Name="OviLukitusButton" Click="OviLukitusButton_Click" Margin="5"/>
+
+        <TextBlock Name="LampotilaTextBlock" FontSize="16" Margin="5"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+            <Button Name="VahennaLampotilaButton" Content="-" Width="50" Click="VahennaLampotilaButton_Click" Margin="5"/>
+            <Button Name="LisaaLampotilaButton" Content="+" Width="50" Click="LisaaLampotilaButton_Click" Margin="5"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

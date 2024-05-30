@@ -1,0 +1,15 @@
+﻿<Window x:Class="Tehtavakirjanpitaja.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tehtäväkirjanpitäjä" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="NimiTextBox" Width="200" Margin="5"/>
+            <TextBox x:Name="KuvausTextBox" Width="200" Margin="5"/>
+            <DatePicker x:Name="MääräaikaDatePicker" Width="200" Margin="5"/>
+            <Button Content="Lisää Tehtävä" Width="200" Margin="5" Click="LisääTehtävä_Click"/>
+            <Button Content="Tallenna Tehtävät" Width="200" Margin="5" Click="TallennaTehtävät_Click"/>
+            <ListBox x:Name="TehtavaListBox" Width="400" Height="150" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

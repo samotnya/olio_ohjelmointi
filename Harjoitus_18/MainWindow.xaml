@@ -1,0 +1,19 @@
+﻿<Window x:Class="YksinkertainenLaskinApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Laskin" Height="347" Width="751">
+    <StackPanel Margin="10">
+        <TextBlock Text="Luku 1:" Margin="5"/>
+        <TextBox Name="Luku1TextBox" Margin="5"/>
+
+        <TextBlock Text="Luku 2:" Margin="5"/>
+        <TextBox Name="Luku2TextBox" Margin="5"/>
+
+        <Button Name="LaskeSumma" Content="Laske Summa" Click="LaskeSumma_Click" Margin="5"/>
+        <Button Name="LaskeErotus" Content="Laske Erotus" Click="LaskeErotus_Click" Margin="5"/>
+        <Button Name="LaskeKertolasku" Content="Laske Kertolasku" Click="LaskeKertolasku_Click" Margin="5"/>
+        <Button Name="LaskeJakolasku" Content="Laske Jakolasku" Click="LaskeJakolasku_Click" Margin="5"/>
+
+        <TextBlock Name="TulosTextBlock" FontSize="16" Margin="5"/>
+    </StackPanel>
+</Window>
